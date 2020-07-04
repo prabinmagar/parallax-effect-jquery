@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #fff;
+}
+.banner{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+.main-container .banner:nth-child(1){
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/img1.jpg) center/cover no-repeat fixed;
+}
+.main-container .banner:nth-child(2){
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/img2.jpg) center/cover no-repeat fixed;
+}
+.main-container .banner:nth-child(3){
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/img3.jpg) center/cover no-repeat fixed;
+}
+.main-container .banner:nth-child(4){
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/img4.jpg) center/cover no-repeat fixed;
+}
+.main-container .banner:nth-child(5){
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/img5.jpg) center/cover no-repeat fixed;
+}
+.main-container .banner:nth-child(1) h2{
+    font-family: 'Lobster', cursive;
+    font-size: 80px;
+}
+.text-box{
+    background: rgba(0, 0, 0, 0.5);
+    width: 70vw;
+    padding: 50px;
+    margin: 0 auto;
+}
+.text-box h3{
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: 25px 0;
+}
+.text-box p{
+    padding-bottom: 25px 0;
+    font-weight: 300;
+    opacity: 0.7;
+}
+.text-box a{
+    display: block;
+    margin: 25px auto;
+    color: #fff;
+    text-transform:  uppercase;
+    text-decoration: none;
+    border: 1.5px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    width: 140px;
+    padding: 7px 0;
+    transition: all 0.4s ease;
+}
+.text-box a:hover{
+    border-color: rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.1);
+}
+.bottom-chevron, .top-chevron{
+    color: #fff;
+    font-size: 25px;
+    height: 45px;
+    width: 45px;
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.top-chevron{
+    top: 60px;
+}
+.bottom-chevron{
+    bottom: 60px;
+}
+
+.top-chevron:hover, .bottom-chevron:hover{
+    opacity: 0.7;
+}
+
+@media screen and (max-width: 600px){
+    .main-container .banner:nth-child(1) h2{
+        font-size: 40px;
+    }
+    .text-box{
+        width: 90vw;
+        padding: 15px;
+    }
+    .text-box h3{
+        font-size: 20px;
+    }
+    .text-box p{
+        font-size: 14px;
+    }
+    .text-box a{
+        font-size: 14px;
+    }
+    .bottom-chevron, .top-chevron{
+        font-size: 20px;
+        height: 30px;
+        width: 30px;
+    }
+    .top-chevron{
+        top: 20px;
+    }
+    .bottom-chevron{
+        bottom: 20px;
+    }
+}
